@@ -1,5 +1,10 @@
 source 'https://rubygems.org'
 
+# official unofficial ruby-debug19 fix
+# with the same gems as mentioned in 
+# https://gist.github.com/1333785
+source 'https://gems.gemfury.com/8n1rdTK8pezvcsyVmmgJ/' 
+
 gem 'rails', '3.2.1'
 
 # Bundle edge Rails instead:
@@ -35,5 +40,7 @@ gem 'jquery-rails'
 # gem 'capistrano'
 
 group :development do
-  gem 'ruby-debug19', :require => 'ruby-debug'
+  gem 'linecache19',       '~> 0.5.13'
+  gem 'ruby-debug-base19', '~> 0.11.26'
+  gem 'ruby-debug19'
 end
