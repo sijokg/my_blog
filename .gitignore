@@ -1,3 +1,6 @@
+#ignore database.yml
+/config/database.yml
+
 #ignore bundler config
 /.bundle
 
