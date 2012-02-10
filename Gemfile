@@ -38,6 +38,14 @@ gem 'jquery-rails'
 
 # Deploy with Capistrano
 # gem 'capistrano'
+group :development, :test do
+  gem 'rspec-rails', '~> 2.8.1' #Note . need to specify only this. Rspec will be installed as a dependency
+end
+
+group :test do
+  gem 'capybara', '~> 1.1.2'
+end
+
 
 group :development do
   gem 'linecache19',       '~> 0.5.13'
