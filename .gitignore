@@ -9,7 +9,7 @@
 /tmp
 
 # Ignore other unneeded files.
-doc/
+/doc
 *.swp
 *~
 .project
