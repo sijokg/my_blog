@@ -39,11 +39,16 @@ gem 'jquery-rails'
 # Deploy with Capistrano
 # gem 'capistrano'
 group :development, :test do
-  gem 'rspec-rails', '~> 2.8.1' #Note . need to specify only this. Rspec will be installed as a dependency
+  gem 'rspec-rails', '~> 2.8.1' #Note . Rspec will be installed as a dependency
+  gem 'guard-rspec', '~> 0.6.0'
 end
 
 group :test do
   gem 'capybara', '~> 1.1.2'
+  gem 'rb-inotify', '~> 0.8.8'
+  gem 'libnotify', '~> 0.7.2'
+  gem 'guard-spork', '~> 0.5.2'
+  gem 'spork', '~> 1.0.0rc2'
 end
 
 
